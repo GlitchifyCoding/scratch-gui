@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+
 $ui-primary: hsla(215, 100%, 95%, 1); /* #E5F0FF */
 $ui-secondary: hsla(215, 75%, 95%, 1); /* #E9F1FC */
 $ui-tertiary: hsla(215, 50%, 90%, 1); /* #D9E3F2 */
