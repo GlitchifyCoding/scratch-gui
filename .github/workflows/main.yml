@@ -14,7 +14,10 @@ jobs:
     steps:
       - name: abc
         run: |
-          npm run build
+          npm install
       - name: def
         run: |
+          npm run build
+      - name: ghi
+         run: |
           npm run deploy
