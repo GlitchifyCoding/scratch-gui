@@ -12,6 +12,8 @@ jobs:
     permissions:
       contents: read
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: abc
         run: |
           npm install
