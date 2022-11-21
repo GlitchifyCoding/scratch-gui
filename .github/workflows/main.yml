@@ -1,0 +1,20 @@
+name: build scratch thingy
+
+on:
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+jobs:
+  scratchtools:
+    name: Build Scratch GUI
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: abc
+        run: |
+          npm run build
+      - name: def
+        run: |
+          npm run deploy
