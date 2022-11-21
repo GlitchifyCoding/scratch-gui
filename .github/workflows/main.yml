@@ -19,5 +19,5 @@ jobs:
         run: |
           npm run build
       - name: ghi
-         run: |
-           npm run deploy
+        run: |
+          npm run deploy
