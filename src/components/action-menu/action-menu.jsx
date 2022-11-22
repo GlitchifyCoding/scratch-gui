@@ -208,17 +208,3 @@ ActionMenu.propTypes = {
 };
 
 export default ActionMenu;
-
-
-// ScratchTools
-async function ScratchTools() {
-async function importAPI(fileName) {
-    var responseAPI = await fetch(`/scratchtools/${fileName}.js`)
-    var dataAPI = await responseAPI.text()
-    var script = document.createElement('script')
-    script.textContent = dataAPI
-    document.body.appendChild(dataAPI)
-}
-importAPI('vm')
-}
-ScratchTools()
