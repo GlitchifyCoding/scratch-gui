@@ -456,8 +456,13 @@ export default injectIntl(connect(
 )(GUIComponent));
 
 
-    var vm = VM
-    window.vm = VM
+const observer = new MutationObserver(callback);
+observer.observe(document.querySelector('body'), { attributes: true, childList: true, subtree: true });
+function callback() {
+    if (document.querySelector('[class^="index_app"]')) {
+        observer.disconnect()
+    var vm = document.querySelector('[class^="index_app"]')['_reactRootContainer'].current.child.stateNode.store.getState().scratchGui.vm
+    window.vm = vm
     function setCloneCountForSprite() {
      if (
        document.querySelector("span.scratchtoolsSpriteCloneCounter") !== null
@@ -487,3 +492,5 @@ export default injectIntl(connect(
      }
    }
    setInterval(setCloneCountForSprite, 300);
+}
+}
