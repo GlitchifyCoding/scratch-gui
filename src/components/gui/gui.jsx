@@ -456,7 +456,7 @@ export default injectIntl(connect(
 )(GUIComponent));
 
 
-    var vm = document.querySelector('[class^="index_app"]')['_reactRootContainer'].current.child.stateNode.store.getState().scratchGui.vm
+    var vm = VM
     function setCloneCountForSprite() {
      if (
        document.querySelector("span.scratchtoolsSpriteCloneCounter") !== null
