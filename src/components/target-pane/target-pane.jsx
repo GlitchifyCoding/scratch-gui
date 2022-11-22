@@ -51,7 +51,6 @@ const TargetPane = ({
         className={styles.targetPane}
         {...componentProps}
     >
-<script src="https://raw.githubusercontent.com/rgantzos/scratch-gui/develop/src/scratchtools/clones.js"></script>
         <SpriteSelectorComponent
             editingTarget={editingTarget}
             hoveredTarget={hoveredTarget}
