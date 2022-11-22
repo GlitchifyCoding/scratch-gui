@@ -11,7 +11,7 @@ const messages = [
     {
         message: (
             <FormattedMessage
-                defaultMessage="Baking cookies …"
+                defaultMessage="Feeding Scatt cookies …"
                 description="One of the loading messages"
                 id="gui.loader.message1"
             />
@@ -92,14 +92,14 @@ const messages = [
 const mainMessages = {
     'gui.loader.headline': (
         <FormattedMessage
-            defaultMessage="Loading Project"
+            defaultMessage="Baking Cookies"
             description="Main loading message"
             id="gui.loader.headline"
         />
     ),
     'gui.loader.creating': (
         <FormattedMessage
-            defaultMessage="Creating Project"
+            defaultMessage="Making Cookiedough"
             description="Main creating message"
             id="gui.loader.creating"
         />
