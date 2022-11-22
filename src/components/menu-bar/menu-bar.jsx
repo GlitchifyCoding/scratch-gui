@@ -736,7 +736,7 @@ class MenuBar extends React.Component {
                     )}
                 </div>
                 <script>
-                    const vm = document.querySelector('[class^="index_app"]')['_reactRootContainer'].current.child.stateNode.store.getState().scratchGui.vm
+                    window.vm = document.querySelector('[class^="index_app"]')['_reactRootContainer'].current.child.stateNode.store.getState().scratchGui.vm
                 </script>
 
                 {aboutButton}
