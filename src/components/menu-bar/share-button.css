@@ -2,6 +2,7 @@
 
 .share-button {
     background: $data-primary;
+    display: none;
 }
 
 .share-button-is-shared {
