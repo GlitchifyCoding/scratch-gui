@@ -47,9 +47,9 @@ const AuthorInfo = ({
 AuthorInfo.propTypes = {
     className: PropTypes.string,
     imageUrl: PropTypes.string,
-    projectTitle: "Cookies",
+    projectTitle: PropTypes.string,
     userId: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-    username: 'scatt'
+    username: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
 };
 
 export default injectIntl(AuthorInfo);

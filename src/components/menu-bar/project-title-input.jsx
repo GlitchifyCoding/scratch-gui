@@ -31,7 +31,7 @@ const ProjectTitleInput = ({
         placeholder={intl.formatMessage(messages.projectTitlePlaceholder)}
         tabIndex="0"
         type="text"
-        value="Cookies"
+        value={projectTitle}
         onSubmit={onSubmit}
     />
 );
