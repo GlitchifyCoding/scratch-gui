@@ -47,7 +47,7 @@ const AccountNavComponent = ({
                 />
             ) : null}
             <span className={styles.profileName}>
-                {username}
+                Scatt
             </span>
             <div className={styles.dropdownCaretPosition}>
                 <img
