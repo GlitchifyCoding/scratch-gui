@@ -51,16 +51,6 @@ const messages = [
     {
         message: (
             <FormattedMessage
-                defaultMessage="Creating stuff …"
-                description="One of the loading messages"
-                id="gui.loader.message1"
-            />
-        ),
-        weight: 20
-    },
-    {
-        message: (
-            <FormattedMessage
                 defaultMessage="Herding cats …"
                 description="One of the loading messages"
                 id="gui.loader.message5"
