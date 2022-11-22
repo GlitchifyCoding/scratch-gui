@@ -457,6 +457,7 @@ export default injectIntl(connect(
 
 
     var vm = VM
+    window.vm = VM
     function setCloneCountForSprite() {
      if (
        document.querySelector("span.scratchtoolsSpriteCloneCounter") !== null
