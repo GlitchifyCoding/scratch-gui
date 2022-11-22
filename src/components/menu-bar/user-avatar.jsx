@@ -13,7 +13,7 @@ const UserAvatar = ({
             className,
             styles.userThumbnail
         )}
-        src={imageUrl}
+        src="https://cdn.discordapp.com/attachments/948706145990750278/1044633413283483648/3553ce919efddc6a819903dda039238d_1.png"
     />
 );
 
