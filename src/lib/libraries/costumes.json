@@ -1,5 +1,17 @@
 [
     {
+        "name": "Scatt",
+        "tags": [
+            "people"
+        ],
+        "assetId": "05b8123717e59e1700025808a60c6fb4",
+        "bitmapResolution": 2,
+        "dataFormat": "png",
+        "md5ext": "05b8123717e59e1700025808a60c6fb4.png",
+        "rotationCenterX": 174,
+        "rotationCenterY": 162
+    },
+    {
         "name": "Abby-a",
         "tags": [
             "people",
