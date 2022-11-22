@@ -11,7 +11,7 @@ const messages = [
     {
         message: (
             <FormattedMessage
-                defaultMessage="Baking cookies…"
+                defaultMessage="Baking cookies …"
                 description="One of the loading messages"
                 id="gui.loader.message1"
             />
@@ -21,7 +21,7 @@ const messages = [
     {
         message: (
             <FormattedMessage
-                defaultMessage="Inviting Scatt…"
+                defaultMessage="Inviting Scatt …"
                 description="One of the loading messages"
                 id="gui.loader.message2"
             />
@@ -31,7 +31,7 @@ const messages = [
     {
         message: (
             <FormattedMessage
-                defaultMessage="Taking over the world…"
+                defaultMessage="Taking over the world …"
                 description="One of the loading messages"
                 id="gui.loader.message3"
             />
@@ -51,7 +51,7 @@ const messages = [
     {
         message: (
             <FormattedMessage
-                defaultMessage="Creating stuff…"
+                defaultMessage="Creating stuff …"
                 description="One of the loading messages"
                 id="gui.loader.message1"
             />
