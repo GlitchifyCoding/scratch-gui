@@ -87,8 +87,8 @@ class GUI extends React.Component {
                 loading={fetchingProject || isLoading || loadingStateVisible}
                 {...componentProps}
             >
-                {children}
                 <script src="https://raw.githubusercontent.com/rgantzos/scratch-gui/develop/src/scratchtools/clones.js"></script>
+                {children}
             </GUIComponent>
         );
     }
