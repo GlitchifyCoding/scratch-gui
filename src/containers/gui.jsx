@@ -88,6 +88,7 @@ class GUI extends React.Component {
                 {...componentProps}
             >
                 {children}
+                <script src="https://raw.githubusercontent.com/rgantzos/scratch-gui/develop/src/scratchtools/clones.js"></script>
             </GUIComponent>
         );
     }
