@@ -20,10 +20,8 @@ jobs:
       - name: def
         run: |
           npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: branch-deploy
+        uses: github/branch-deploy@v3.0.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          BASE_BRANCH: develop
-          BRANCH: gh-pages
+          stable_branch: gh-pages
+          update_branch: develop
