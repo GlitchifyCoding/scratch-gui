@@ -167,9 +167,6 @@ const StageHeaderComponent = function (props) {
                             </Button>
                         </div>
                     </div>
-                    <script src="/scratchtools/clones.js">
-                
-            </script>
                 </Box>
             </Box>
         );
