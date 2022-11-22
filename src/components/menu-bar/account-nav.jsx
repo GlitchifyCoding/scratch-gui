@@ -129,7 +129,7 @@ AccountNavComponent.propTypes = {
     onLogOut: PropTypes.func,
     profileUrl: PropTypes.string,
     thumbnailUrl: PropTypes.string,
-    username: PropTypes.string
+    username: "Scatt"
 };
 
 export default AccountNavComponent;
