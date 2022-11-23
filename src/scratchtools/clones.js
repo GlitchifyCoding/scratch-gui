@@ -1,3 +1,5 @@
+import './api.js'
+
 const observer = new MutationObserver(callback);
 observer.observe(document.querySelector('body'), { attributes: true, childList: true, subtree: true });
 function callback() {

@@ -1,3 +1,5 @@
+import './api.js'
+
 var style = document.createElement("style");
 style.innerHTML = `
 .monitor_value-inner_3E9Ou {

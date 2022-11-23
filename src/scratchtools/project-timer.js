@@ -1,3 +1,5 @@
+import './api.js'
+
 ScratchTools.waitForElements('[class^="index_app"]', function() {
 if (
     document.scratchtoolsTimer !== undefined &&
