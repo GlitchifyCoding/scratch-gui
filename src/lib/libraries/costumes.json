@@ -1,15 +1,16 @@
 [
     {
-        "name": "Scatt",
+        "name": "Taco",
         "tags": [
-            "people"
+            "food",
+            "designerd"
         ],
-        "assetId": "05b8123717e59e1700025808a60c6fb4",
-        "bitmapResolution": 2,
-        "dataFormat": "png",
-        "md5ext": "05b8123717e59e1700025808a60c6fb4.png",
-        "rotationCenterX": 174,
-        "rotationCenterY": 162
+        "assetId": "383ea1ef802bc2706670536cfa8271b7",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "383ea1ef802bc2706670536cfa8271b7.svg",
+        "rotationCenterX": 78,
+        "rotationCenterY": 48
     },
     {
         "name": "Abby-a",
@@ -9841,19 +9842,6 @@
         "md5ext": "992d6359be830d977559dad91b04f698.svg",
         "rotationCenterX": 86,
         "rotationCenterY": 73
-    },
-    {
-        "name": "Taco",
-        "tags": [
-            "food",
-            "designerd"
-        ],
-        "assetId": "383ea1ef802bc2706670536cfa8271b7",
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "md5ext": "383ea1ef802bc2706670536cfa8271b7.svg",
-        "rotationCenterX": 78,
-        "rotationCenterY": 48
     },
     {
         "name": "Taco-wizard",
