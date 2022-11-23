@@ -90,7 +90,8 @@ function rgb2hsl(rgb) {
     );
   });
   
-  GM_addStyle(`
+  var style = document.createElement("style");
+style.innerHTML = `
     .u-contextmenu-colored .blocklyContextMenu {
       background-color: var(--u-contextmenu-bg);
       border-color: var(--u-contextmenu-border);
@@ -104,5 +105,5 @@ function rgb2hsl(rgb) {
     .u-contextmenu-colored .blocklyContextMenu .goog-menuitem:hover {
       background-color: rgba(0, 0, 0, 0.2);
     }
-    `);
-  
+    `
+  document.querySelector('html').appendChild(style)
