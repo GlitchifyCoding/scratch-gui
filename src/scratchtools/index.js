@@ -1,3 +1,4 @@
 import './clones.js'
-import './add-last-option.js'
 import './scroll-lists.js'
+import './colored-comments.js'
+import './colored-context-menus.js'
