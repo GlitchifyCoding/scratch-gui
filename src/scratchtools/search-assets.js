@@ -1,4 +1,5 @@
-if (document.querySelector('[class^="asset-panel_wrapper_"]')) {
+const observer = new MutationObserver(function() {
+    if (document.querySelector('[class^="asset-panel_wrapper_"]')) {
   if (!document.querySelector(".scratchtoolsAssetSearch")) {
     var input = document.createElement("input");
     var assetBox = document.querySelector('[class^="asset-panel_wrapper_"]')
@@ -65,3 +66,5 @@ const observer3 = new MutationObserver(function (assetBox) {
     }
   });
 observer3.observe(document.querySelector('body'), { attributes: true, childList: true, subtree: true });
+})
+observer.observe(document.querySelector('body'), { attributes: true, childList: true, subtree: true });
