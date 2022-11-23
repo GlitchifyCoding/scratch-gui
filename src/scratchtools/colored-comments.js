@@ -46,7 +46,7 @@ function getColoredComments() {
     document.body.appendChild(style);
     colorComments();
   }
-    const targetNode2 = document.querySelector("div#app");
+    const targetNode2 = document.querySelector("body");
   
     // Options for the observer (which mutations to observe)
     const config2 = {
