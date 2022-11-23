@@ -1,7 +1,7 @@
 const observer = new MutationObserver(callback);
 observer.observe(document.querySelector('body'), { attributes: true, childList: true, subtree: true });
 function callback() {
-    if (document.querySelector('[class^="index_app"]')) {
+    if (document.querySelector('[class^="index_app"]') && document.querySelector('[class^="index_app"]')['_reactRootContainer']) {
         observer.disconnect()
     var vm = document.querySelector('[class^="index_app"]')['_reactRootContainer'].current.child.stateNode.store.getState().scratchGui.vm
     window.vm = vm
