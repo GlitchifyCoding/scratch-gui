@@ -13,7 +13,7 @@ function getColoredComments() {
         }
       });
     }
-    const targetNode = document.querySelector("g.blocklyBubbleCanvas");
+    const targetNode = document.querySelector("body");
   
     // Options for the observer (which mutations to observe)
     const config = {
