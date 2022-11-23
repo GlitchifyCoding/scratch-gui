@@ -50,7 +50,6 @@ function returnScratchToolsSelectorsMutationObserverCallbacks() {
   });
 }
 
-if (window.location.href.startsWith("https://scratch.mit.edu/projects/")) {
   waitForElements(
     '[class^="sound-editor_round-button_"]',
     function () {
@@ -165,4 +164,3 @@ if (window.location.href.startsWith("https://scratch.mit.edu/projects/")) {
     "scratchtoolsPauseAudio",
     false
   );
-}
