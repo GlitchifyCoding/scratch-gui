@@ -43,9 +43,9 @@ const projectData = translateFunction => {
                 currentCostume: 0,
                 costumes: [
                     {
-                        assetId: 'cd21514d0531fdffb22204e0ec5ed84a',
-                        name: translator(messages.backdrop, {index: 1}),
-                        md5ext: 'cd21514d0531fdffb22204e0ec5ed84a.svg',
+                        assetId: 'd3344650f594bcecdf46aa4a9441badd',
+                        name: "Underwater",
+                        md5ext: 'd3344650f594bcecdf46aa4a9441badd.svg',
                         dataFormat: 'svg',
                         rotationCenterX: 240,
                         rotationCenterY: 180
