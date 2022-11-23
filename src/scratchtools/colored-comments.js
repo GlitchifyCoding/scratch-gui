@@ -46,10 +46,6 @@ function getColoredComments() {
     document.body.appendChild(style);
     colorComments();
   }
-  if (
-    window.location.href.includes("https://scratch.mit.edu/projects/") &&
-    window.location.href.includes("/editor")
-  ) {
     const targetNode2 = document.querySelector("div#app");
   
     // Options for the observer (which mutations to observe)
@@ -75,5 +71,4 @@ function getColoredComments() {
   
     // Start observing the target node for configured mutations
     observer2.observe(targetNode2, config2);
-  }
   
