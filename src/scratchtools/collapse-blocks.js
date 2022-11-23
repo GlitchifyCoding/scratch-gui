@@ -39,7 +39,6 @@
               el.push(collapse);
             };
             if (!block.customContextMenu) {
-                console.log(block.type)
             block.customContextMenu = test
         }
           }
