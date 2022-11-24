@@ -1,44 +1,11 @@
-var allSelectors = {};
-var allCallbacksForWait = {};
-const waitForElements = function (selector, callback, id, rework) {
-  if (allCallbacksForWait[selector] === undefined) {
-    allCallbacksForWait[selector] = [{ callback: callback, id: id }];
-  } else {
-    allCallbacksForWait[selector].push({ callback: callback, id: id });
-  }
-  if (rework) {
-    allSelectors[id] = [document.querySelectorAll(selector)];
-  } else {
-    allSelectors[id] = [];
-    returnScratchToolsSelectorsMutationObserverCallbacks();
-  }
-};
+const foundVM = false
 
-function enableScratchToolsSelectorsMutationObserver() {
-  var ScratchToolsSelectorsMutationObserver = new MutationObserver(
-    returnScratchToolsSelectorsMutationObserverCallbacks
-  );
-  ScratchToolsSelectorsMutationObserver.observe(
-    document.querySelector("html"),
-    { attributes: true, childList: true, subtree: true }
-  );
-}
-enableScratchToolsSelectorsMutationObserver();
-
-function returnScratchToolsSelectorsMutationObserverCallbacks() {
-  Object.keys(allCallbacksForWait).forEach(function (el) {
-    document.querySelectorAll(el).forEach(function (element) {
-      allCallbacksForWait[el].forEach(function (el2) {
-        if (!allSelectors[el2.id].includes(element)) {
-          allSelectors[el2.id].push(element);
-          el2.callback(element);
+const observer = new MutationObserver(function() {
+    try {
+        if (!foundVM) {
+        if (document.querySelector('[class^="index_app"]')['_reactRootContainer'].current.child.stateNode.store.getState().scratchGui.vm) {
+            foundVM = true
         }
-      });
-    });
-  });
-}
-
-waitForElements('[class^="index_app"]', function() {
     var vm = document.querySelector('[class^="index_app"]')['_reactRootContainer'].current.child.stateNode.store.getState().scratchGui.vm
   if (
     document.scratchtoolsTimer !== undefined &&
@@ -94,4 +61,12 @@ vm.runtime.on("PROJECT_RUN_START", function () {
       }
     }
   }
-}, 'wait for project timer', false)
+}
+} catch(err) {}
+})
+
+observer.observe(document.querySelector('body'), {
+    attributes: true,
+    childList: true,
+    subtree: true,
+  });
