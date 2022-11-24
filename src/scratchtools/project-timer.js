@@ -1,4 +1,4 @@
-const foundVM = false
+let foundVM = false
 
 const observer = new MutationObserver(function() {
     try {
